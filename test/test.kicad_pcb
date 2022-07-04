@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 5)
+    (drawings 4)
     (tracks 9)
     (zones 0)
     (modules 2)
@@ -59,10 +59,10 @@
     (pad_size 1.524 1.524)
     (pad_drill 0.762)
     (pad_to_mask_clearance 0)
-    (aux_axis_origin 0 0)
+    (aux_axis_origin 167.8 104.75)
     (visible_elements 7FFFFFFF)
     (pcbplotparams
-      (layerselection 0x00000_7fffffff)
+      (layerselection 0x01000_7fffffff)
       (usegerberextensions false)
       (usegerberattributes true)
       (usegerberadvancedattributes true)
@@ -108,7 +108,7 @@
   )
 
   (module Package_TO_SOT_SMD:SOT-23 (layer F.Cu) (tedit 5A02FF57) (tstamp 61ADEF07)
-    (at 4.17 5.46 180)
+    (at 170.37 108.61 180)
     (descr "SOT-23, Standard")
     (tags SOT-23)
     (path /61ADCA2E)
@@ -149,7 +149,7 @@
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 61ADEEF2)
-    (at 9.25 2.92)
+    (at 175.45 106.07)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
     (path /61AD980F)
@@ -190,20 +190,53 @@
     )
   )
 
-  (target plus (at 1.63 1.65) (size 5) (width 0.05) (layer Edge.Cuts))
-  (gr_line (start 10.52 1.65) (end 10.52 9.27) (layer Edge.Cuts) (width 0.05) (tstamp 61ADA6D2))
-  (gr_arc (start 5.44 5.46) (end 5.44 1.65) (angle -180) (layer Edge.Cuts) (width 0.05))
-  (gr_line (start 10.52 1.65) (end 5.44 1.65) (layer Edge.Cuts) (width 0.05))
-  (gr_line (start 10.52 9.27) (end 5.44 9.27) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 176.72 104.8) (end 176.72 112.42) (layer Edge.Cuts) (width 0.05) (tstamp 61ADA6D2))
+  (gr_arc (start 171.64 108.61) (end 171.64 104.8) (angle -180) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 176.72 104.8) (end 171.64 104.8) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 176.72 112.42) (end 171.64 112.42) (layer Edge.Cuts) (width 0.05))
 
-  (segment (start 5.099998 8) (end 9.25 8) (width 0.5) (layer F.Cu) (net 1))
-  (segment (start 4.269999 7.170001) (end 5.099998 8) (width 0.5) (layer F.Cu) (net 1))
-  (segment (start 4.269999 5.410001) (end 4.269999 7.170001) (width 0.5) (layer F.Cu) (net 1))
-  (segment (start 5.17 4.51) (end 4.269999 5.410001) (width 0.5) (layer F.Cu) (net 1))
-  (segment (start 8.3 6.41) (end 9.25 5.46) (width 0.5) (layer F.Cu) (net 2))
-  (segment (start 5.17 6.41) (end 8.3 6.41) (width 0.5) (layer F.Cu) (net 2))
-  (segment (start 3.17 4.849998) (end 3.17 5.46) (width 0.5) (layer F.Cu) (net 3))
-  (segment (start 5.099998 2.92) (end 3.17 4.849998) (width 0.5) (layer F.Cu) (net 3))
-  (segment (start 9.25 2.92) (end 5.099998 2.92) (width 0.5) (layer F.Cu) (net 3))
+  (segment (start 171.299998 111.15) (end 175.45 111.15) (width 0.5) (layer F.Cu) (net 1))
+  (segment (start 170.469999 110.320001) (end 171.299998 111.15) (width 0.5) (layer F.Cu) (net 1))
+  (segment (start 170.469999 108.560001) (end 170.469999 110.320001) (width 0.5) (layer F.Cu) (net 1))
+  (segment (start 171.37 107.66) (end 170.469999 108.560001) (width 0.5) (layer F.Cu) (net 1))
+  (segment (start 174.5 109.56) (end 175.45 108.61) (width 0.5) (layer F.Cu) (net 2))
+  (segment (start 171.37 109.56) (end 174.5 109.56) (width 0.5) (layer F.Cu) (net 2))
+  (segment (start 169.37 107.999998) (end 169.37 108.61) (width 0.5) (layer F.Cu) (net 3))
+  (segment (start 171.299998 106.07) (end 169.37 107.999998) (width 0.5) (layer F.Cu) (net 3))
+  (segment (start 175.45 106.07) (end 171.299998 106.07) (width 0.5) (layer F.Cu) (net 3))
 
+  (zone (net 0) (net_name "") (layer F.Cu) (tstamp 62C246B0) (hatch edge 0.508)
+    (connect_pads (clearance 0.508))
+    (min_thickness 0.254)
+    (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (polygon
+      (pts
+        (xy 176.7 104.85) (xy 176.75 112.4) (xy 167.85 112.45) (xy 167.8 104.75)
+      )
+    )
+    (filled_polygon
+      (pts
+        (xy 168.67582 109.599502) (xy 168.795518 109.635812) (xy 168.92 109.648072) (xy 169.585 109.648072) (xy 169.585 110.276522)
+        (xy 169.580718 110.320001) (xy 169.597804 110.493491) (xy 169.648411 110.660314) (xy 169.730589 110.81406) (xy 169.813467 110.915047)
+        (xy 169.81347 110.91505) (xy 169.841183 110.948818) (xy 169.87495 110.97653) (xy 170.391672 111.493253) (xy 169.898564 111.231063)
+        (xy 169.422636 110.842906) (xy 169.031155 110.369686) (xy 168.73905 109.829449) (xy 168.666292 109.594409)
+      )
+    )
+    (filled_polygon
+      (pts
+        (xy 173.974188 107.044482) (xy 174.010498 107.16418) (xy 174.069463 107.274494) (xy 174.148815 107.371185) (xy 174.245506 107.450537)
+        (xy 174.35582 107.509502) (xy 174.42838 107.531513) (xy 174.296525 107.663368) (xy 174.13401 107.906589) (xy 174.022068 108.176842)
+        (xy 173.965 108.46374) (xy 173.965 108.675) (xy 172.229981 108.675) (xy 172.174494 108.629463) (xy 172.138082 108.61)
+        (xy 172.174494 108.590537) (xy 172.271185 108.511185) (xy 172.350537 108.414494) (xy 172.409502 108.30418) (xy 172.445812 108.184482)
+        (xy 172.458072 108.06) (xy 172.458072 107.26) (xy 172.445812 107.135518) (xy 172.409502 107.01582) (xy 172.376993 106.955)
+        (xy 173.965375 106.955)
+      )
+    )
+    (filled_polygon
+      (pts
+        (xy 168.774956 107.343464) (xy 168.763054 107.353232) (xy 169.006842 106.886908) (xy 169.391671 106.408277) (xy 169.862142 106.013504)
+        (xy 170.400331 105.717632) (xy 170.400999 105.71742)
+      )
+    )
+  )
 )
