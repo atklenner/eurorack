@@ -507,10 +507,10 @@ Wire Wire Line
 	5750 4100 5900 4100
 Connection ~ 5900 4100
 $Comp
-L Amplifier_Operational:TL074 U?
+L Amplifier_Operational:TL074 U1
 U 4 1 62CC1EBF
 P 8350 2100
-F 0 "U?" H 8350 2467 50  0000 C CNN
+F 0 "U1" H 8350 2467 50  0000 C CNN
 F 1 "TL074" H 8350 2376 50  0000 C CNN
 F 2 "" H 8300 2200 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8400 2300 50  0001 C CNN
@@ -520,4 +520,8 @@ $EndComp
 Wire Wire Line
 	8050 2000 8050 2200
 NoConn ~ 8650 2100
+Text GLabel 1200 5650 0    50   Input ~ 0
++12v
+Text GLabel 1200 6050 0    50   Input ~ 0
+-12V
 $EndSCHEMATC
