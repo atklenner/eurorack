@@ -74,7 +74,7 @@ U 1 1 62D57778
 P 2250 6950
 F 0 "J2" H 2300 7367 50  0000 C CNN
 F 1 "Power" H 2300 7276 50  0000 C CNN
-F 2 "Connector_Wire:SolderWire-0.25sqmm_1x01_D0.65mm_OD2mm" H 2250 6950 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 2250 6950 50  0001 C CNN
 F 3 "~" H 2250 6950 50  0001 C CNN
 	1    2250 6950
 	1    0    0    -1  
@@ -318,17 +318,6 @@ $EndComp
 Connection ~ 3500 7250
 Wire Wire Line
 	3500 7250 3800 7250
-$Comp
-L Connector:Conn_01x01_Female J1
-U 1 1 62D5AD4C
-P 1150 2950
-F 0 "J1" H 1178 2976 50  0000 L CNN
-F 1 "Gate" H 1178 2885 50  0000 L CNN
-F 2 "Connector_Wire:SolderWire-0.25sqmm_1x01_D0.65mm_OD2mm" H 1150 2950 50  0001 C CNN
-F 3 "~" H 1150 2950 50  0001 C CNN
-	1    1150 2950
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	2500 2050 2350 2050
 Wire Wire Line
@@ -375,8 +364,6 @@ F 3 "~" H 2650 2500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2500 3150 1350 3150
-Wire Wire Line
-	1350 3150 1350 2950
 $Comp
 L Device:D D1
 U 1 1 62D7E580
@@ -410,9 +397,6 @@ F 3 "~" H 1350 2200 50  0001 C CNN
 	1    1350 2200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1350 2950 1350 2350
-Connection ~ 1350 2950
 Wire Wire Line
 	1350 2050 1350 1850
 Wire Wire Line
@@ -477,7 +461,7 @@ U 1 1 62D871A1
 P 4150 3050
 F 0 "RV1" V 4035 3050 50  0000 C CNN
 F 1 "A100K Sustain" V 3944 3050 50  0000 C CNN
-F 2 "" H 4150 3050 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical" H 4150 3050 50  0001 C CNN
 F 3 "~" H 4150 3050 50  0001 C CNN
 	1    4150 3050
 	0    1    -1   0   
@@ -690,7 +674,7 @@ U 1 1 62DAEF05
 P 7450 1850
 F 0 "RV2" V 7243 1850 50  0000 C CNN
 F 1 "A1M Attack" V 7334 1850 50  0000 C CNN
-F 2 "" H 7450 1850 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical" H 7450 1850 50  0001 C CNN
 F 3 "~" H 7450 1850 50  0001 C CNN
 	1    7450 1850
 	0    1    1    0   
@@ -839,58 +823,124 @@ Wire Wire Line
 	9550 2250 9250 2250
 Connection ~ 9250 2250
 $Comp
-L Connector:Conn_01x01_Female J3
-U 1 1 62DDB569
-P 10050 2250
-F 0 "J3" H 10078 2276 50  0000 L CNN
-F 1 "OUT" H 10078 2185 50  0000 L CNN
-F 2 "Connector_Wire:SolderWire-0.25sqmm_1x01_D0.65mm_OD2mm" H 10050 2250 50  0001 C CNN
-F 3 "~" H 10050 2250 50  0001 C CNN
-	1    10050 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J4
-U 1 1 62DDE02F
-P 10450 3350
-F 0 "J4" H 10478 3376 50  0000 L CNN
-F 1 "INV OUT" H 10478 3285 50  0000 L CNN
-F 2 "Connector_Wire:SolderWire-0.25sqmm_1x01_D0.65mm_OD2mm" H 10450 3350 50  0001 C CNN
-F 3 "~" H 10450 3350 50  0001 C CNN
-	1    10450 3350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_POT RV3
 U 1 1 62DB3CBE
 P 7450 2400
 F 0 "RV3" V 7335 2400 50  0000 C CNN
 F 1 "A1M Decay/Release" V 7244 2400 50  0000 C CNN
-F 2 "" H 7450 2400 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical" H 7450 2400 50  0001 C CNN
 F 3 "~" H 7450 2400 50  0001 C CNN
 	1    7450 2400
 	0    1    -1   0   
 $EndComp
 $Comp
-L Connector:Conn_01x01_Female J5
-U 1 1 62CA67A4
-P 2900 4450
-F 0 "J5" H 2928 4476 50  0000 L CNN
-F 1 "Ground" H 2928 4385 50  0000 L CNN
-F 2 "Connector_Wire:SolderWire-0.25sqmm_1x01_D0.65mm_OD2mm" H 2900 4450 50  0001 C CNN
-F 3 "~" H 2900 4450 50  0001 C CNN
-	1    2900 4450
-	-1   0    0    1   
+L Connector:AudioJack2_SwitchT J1
+U 1 1 62CBD424
+P 900 2850
+F 0 "J1" H 932 3175 50  0000 C CNN
+F 1 "GATE" H 932 3084 50  0000 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 900 2850 50  0001 C CNN
+F 3 "~" H 900 2850 50  0001 C CNN
+	1    900  2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 2350 1350 2850
+Wire Wire Line
+	1100 2850 1350 2850
+Connection ~ 1350 2850
+Wire Wire Line
+	1350 2850 1350 3150
+$Comp
+L power:Earth #PWR0112
+U 1 1 62CC2F54
+P 1100 2950
+F 0 "#PWR0112" H 1100 2700 50  0001 C CNN
+F 1 "Earth" H 1100 2800 50  0001 C CNN
+F 2 "" H 1100 2950 50  0001 C CNN
+F 3 "~" H 1100 2950 50  0001 C CNN
+	1    1100 2950
+	0    -1   -1   0   
 $EndComp
 $Comp
-L power:Earth #PWR0111
-U 1 1 62CA6B82
-P 3100 4450
-F 0 "#PWR0111" H 3100 4200 50  0001 C CNN
-F 1 "Earth" H 3100 4300 50  0001 C CNN
-F 2 "" H 3100 4450 50  0001 C CNN
-F 3 "~" H 3100 4450 50  0001 C CNN
-	1    3100 4450
+L power:Earth #PWR0113
+U 1 1 62CC34BA
+P 1100 2750
+F 0 "#PWR0113" H 1100 2500 50  0001 C CNN
+F 1 "Earth" H 1100 2600 50  0001 C CNN
+F 2 "" H 1100 2750 50  0001 C CNN
+F 3 "~" H 1100 2750 50  0001 C CNN
+	1    1100 2750
 	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:AudioJack2_SwitchT J4
+U 1 1 62CC3778
+P 10650 3350
+F 0 "J4" H 10470 3375 50  0000 R CNN
+F 1 "INV OUT" H 10470 3284 50  0000 R CNN
+F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 10650 3350 50  0001 C CNN
+F 3 "~" H 10650 3350 50  0001 C CNN
+	1    10650 3350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2_SwitchT J3
+U 1 1 62CC766F
+P 10300 2250
+F 0 "J3" H 10120 2275 50  0000 R CNN
+F 1 "OUT" H 10120 2184 50  0000 R CNN
+F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 10300 2250 50  0001 C CNN
+F 3 "~" H 10300 2250 50  0001 C CNN
+	1    10300 2250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 2250 9850 2250
+Wire Wire Line
+	10450 3350 10250 3350
+$Comp
+L power:Earth #PWR0114
+U 1 1 62CCD553
+P 10450 3450
+F 0 "#PWR0114" H 10450 3200 50  0001 C CNN
+F 1 "Earth" H 10450 3300 50  0001 C CNN
+F 2 "" H 10450 3450 50  0001 C CNN
+F 3 "~" H 10450 3450 50  0001 C CNN
+	1    10450 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0115
+U 1 1 62CCDE87
+P 10450 3250
+F 0 "#PWR0115" H 10450 3000 50  0001 C CNN
+F 1 "Earth" H 10450 3100 50  0001 C CNN
+F 2 "" H 10450 3250 50  0001 C CNN
+F 3 "~" H 10450 3250 50  0001 C CNN
+	1    10450 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0116
+U 1 1 62CCE0FD
+P 10100 2350
+F 0 "#PWR0116" H 10100 2100 50  0001 C CNN
+F 1 "Earth" H 10100 2200 50  0001 C CNN
+F 2 "" H 10100 2350 50  0001 C CNN
+F 3 "~" H 10100 2350 50  0001 C CNN
+	1    10100 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0117
+U 1 1 62CCE65D
+P 10100 2150
+F 0 "#PWR0117" H 10100 1900 50  0001 C CNN
+F 1 "Earth" H 10100 2000 50  0001 C CNN
+F 2 "" H 10100 2150 50  0001 C CNN
+F 3 "~" H 10100 2150 50  0001 C CNN
+	1    10100 2150
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC

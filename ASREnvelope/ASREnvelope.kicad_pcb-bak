@@ -215,7 +215,7 @@
   )
 
   (module Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles (layer F.Cu) (tedit 5C2B6BB2) (tstamp 62CA77BE)
-    (at 164.592 125.984)
+    (at 164.084 125.984)
     (descr "TRS 3.5mm, vertical, Thonkiconn, PCB mount, (http://www.qingpu-electronics.com/en/products/WQP-PJ398SM-362.html)")
     (tags "WQP-PJ398SM WQP-PJ301M-12 TRS 3.5mm mono vertical jack thonkiconn qingpu")
     (path /62CC3778)
@@ -512,7 +512,7 @@
   )
 
   (module Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical (layer F.Cu) (tedit 5C6C6C14) (tstamp 62CA620E)
-    (at 156.464 106.68 90)
+    (at 155.956 106.68 90)
     (descr "Potentiometer, vertical, 9mm, single, http://www.taiwanalpha.com.tw/downloads?target=products&id=113")
     (tags "potentiometer vertical 9mm single")
     (path /62DB3CBE)
@@ -559,7 +559,7 @@
   )
 
   (module Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical (layer F.Cu) (tedit 5C6C6C14) (tstamp 62CA61F2)
-    (at 156.464 77.216 90)
+    (at 155.956 77.216 90)
     (descr "Potentiometer, vertical, 9mm, single, http://www.taiwanalpha.com.tw/downloads?target=products&id=113")
     (tags "potentiometer vertical 9mm single")
     (path /62DAEF05)
@@ -606,7 +606,7 @@
   )
 
   (module Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical (layer F.Cu) (tedit 5C6C6C14) (tstamp 62CA61D6)
-    (at 156.464 91.948 90)
+    (at 155.956 91.948 90)
     (descr "Potentiometer, vertical, 9mm, single, http://www.taiwanalpha.com.tw/downloads?target=products&id=113")
     (tags "potentiometer vertical 9mm single")
     (path /62D871A1)
