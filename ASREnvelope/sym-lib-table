@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "ASREnvelope-rescue")(type "Legacy")(uri "${KIPRJMOD}/ASREnvelope-rescue.lib")(options "")(descr ""))
+)
