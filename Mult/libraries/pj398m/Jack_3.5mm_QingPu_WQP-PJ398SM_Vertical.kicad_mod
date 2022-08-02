@@ -48,21 +48,6 @@
   (pad "S" thru_hole circle (at 0 6.48) (size 2.13 2.13) (drill 1.4) (layers *.Cu *.Mask) (tstamp 2e6825e1-ea96-4a96-9f20-71bd6b9f8c04))
   (pad "T" thru_hole circle (at 0 -4.92) (size 2.13 2.13) (drill 1.4) (layers *.Cu *.Mask) (tstamp 5329d54c-df88-434d-a12f-4129aa29e082))
   (pad "TN" thru_hole circle (at 0 3.38) (size 2.13 2.13) (drill 1.4) (layers *.Cu *.Mask) (tstamp 8c26e322-12f2-402c-8464-925fc629480e))
-  (model "${KISYS3DMOD}/AudioJacks.3dshapes/PJ398SM.step" hide
-    (offset (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
-  )
-  (model "${KISYS3DMOD}/AudioJacks.3dshapes/PJ398SM_Hex_nut.step" hide
-    (offset (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
-  )
-  (model "${KISYS3DMOD}/AudioJacks.3dshapes/PJ398SM_Knurl_nut.step" hide
-    (offset (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
-  )
   (model "${KIPRJMOD}/libraries/pj398m/PJ398SM.step"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
