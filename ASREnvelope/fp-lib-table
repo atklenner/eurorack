@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name "pj398m")(type "KiCad")(uri "${KIPRJMOD}/libraries/pj398m")(options "")(descr ""))
+  (lib (name "Eurocad")(type "KiCad")(uri "${KIPRJMOD}/libraries/Eurocad.pretty")(options "")(descr ""))
 )
